@@ -27,3 +27,12 @@ Route::post('/managecourse/store',[App\Http\Controllers\CourseController::class,
 Route::get('/managebatch',[App\Http\Controllers\BatchController::class,'index']);
 Route::get('/managebatch/create',[App\Http\Controllers\BatchController::class,'create'])->name('create');
 Route::post('/managebatch/store',[App\Http\Controllers\BatchController::class,'store'])->name('store');
+
+
+//Payment and reciept
+
+Route::get('/managepayment',[App\Http\Controllers\PaymentController::class,'index'])->name('index');
+Route::post('/payment/pay',[App\Http\Controllers\PaymentController::class,'store'])->name('store');
+Route::post('/payment/success',[App\Http\Controllers\PaymentController::class,'success'])->name('success');
+Route::get('/payment/receipt/{id}',[App\Http\Controllers\PaymentController::class,'receipt'])->name('receipt');
+

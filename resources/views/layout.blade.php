@@ -127,7 +127,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="block px-4 py-2 rounded hover:bg-slate-700">
+                        <a href="{{url('/managepayment')}}" class="block px-4 py-2 rounded hover:bg-slate-700">
                             Payment
                         </a>
                     </li>
